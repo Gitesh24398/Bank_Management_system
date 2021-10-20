@@ -17,10 +17,10 @@
 		<java.version>11</java.version>
 	</properties>
 	<dependencies>
-		<dependency>
+		<!-- <dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-security</artifactId>
-		</dependency>
+		</dependency> -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
@@ -42,19 +42,21 @@
 			<scope>test</scope>
 		</dependency>
 		<dependency>
-			<groupId>org.springframework.security</groupId>
-			<artifactId>spring-security-test</artifactId>
-			<scope>test</scope>
+    		<groupId>mysql</groupId>
+    		<artifactId>mysql-connector-java</artifactId>
+   			 <version>8.0.27</version>
 		</dependency>
 		<dependency>
-			<groupId>mysql</groupId>
-			<artifactId>mysql-connector-java</artifactId>
-			<scope>runtime</scope>
+    		<groupId>org.hibernate</groupId>
+    		<artifactId>hibernate-entitymanager</artifactId>
+    		<version>5.6.0.Final</version>
 		</dependency>
 		<dependency>
-		   <groupId>javax.validation</groupId>
-		   <artifactId>validation-api</artifactId>
-		</dependency>
+    	<groupId>com.oracle.ojdbc</groupId>
+    	<artifactId>ojdbc8</artifactId>
+    	<version>19.3.0.0</version>
+	</dependency>
+		
 	</dependencies>
 
 	<build>
